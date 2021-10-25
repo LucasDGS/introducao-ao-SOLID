@@ -77,7 +77,7 @@ describe("[GET] /users/:user_id", () => {
       created_at: new Date(response.body.created_at),
       updated_at: new Date(response.body.updated_at),
     };
-
+    console.log(response.body);
     expect(parsedResponse).toMatchObject({
       ...user,
       created_at: user.created_at,
